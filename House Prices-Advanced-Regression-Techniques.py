@@ -45,7 +45,6 @@ print(ss.head())
 
 
 ### Exploratory data analysis(EDA)
-
 print(train.describe().transpose())
 print(test.describe().transpose())
 
@@ -71,7 +70,6 @@ print("Skewness: %f"%train['SalePrice'].skew())
 print("Kurtosis: %f"%train['SalePrice'].kurt())
 
 ### Correlation between numerical variables
- ##Correlation between numerical variables
 corr = combine.corr()
 plt.figure(figsize = (12, 8))
 sns.heatmap(corr, cmap = 'coolwarm')
